@@ -60,21 +60,16 @@ a:hover {
     color: white;
     display: flex;
     flex-direction: column;
-    /* Elemente untereinander anordnen */
     align-items: flex-start;
-    /* Am linken Rand ausrichten */
     justify-content: flex-end;
-    /* Am unteren Rand ausrichten */
     box-sizing: border-box;
     padding: 10px;
-    /* Abstand vom Rand für bessere Optik */
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
 .image-container:hover .image-overlay {
     opacity: 1;
-    /* Sichtbar beim Hover */
 }
 
 
