@@ -12,7 +12,7 @@ function calculateImagesPerRow() {
     let iprow;
 
     // Bestimme die Anzahl der Bilder basierend auf dem Seitenverhältnis
-    if (aspectRatio > 1.65) {  // Sehr breite Fenster
+    if (aspectRatio > 1.75) {  // Sehr breite Fenster
         iprow = 4;  // Mehr Bilder pro Reihe
     } else if (aspectRatio > 1) {  // Normale Fenster
         iprow = 3;  // Standardanzahl
