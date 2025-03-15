@@ -1,6 +1,7 @@
 window.onload = function () {
     // Ladebildschirm ausblenden
     document.getElementById('loadingScreen').style.display = 'none';
+    console.log("loadingscreen disabled")
 };
 
 function calculateImagesPerRow() {
