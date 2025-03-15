@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 30px;
+    font-weight: lighter;
+    font-size: xx-large;
+}
+
+a {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 30px;
+    text-decoration: none;
+    color: dimgrey;
+    font-weight: bold;
+}
+
+a:hover {
+    color: black;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    row-gap: 10px;
+    margin: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    object-fit: cover;
+}
+
+.gallery img:hover {
+    filter: brightness(75%);
+    transition: 0.3s;
+}
+
+.header {
+    display: flex;
+    margin: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    gap: 10px;
+}
+
+.header img {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 50px;
+}
+
+.warning {
+    font-family: monospace;
+    color: red;
+    font-weight: bold;
+}
