@@ -144,4 +144,5 @@ a:hover {
     margin: 30px;
     margin-right: 40px;
     z-index: 99;
+    opacity: 0;
 }
