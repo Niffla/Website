@@ -61,4 +61,8 @@ a:hover {
     font-family: monospace;
     color: red;
     font-weight: bold;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 10px;
 }
