@@ -36,6 +36,7 @@ a:hover {
 
 .gallery img {
     object-fit: cover;
+    max-height: 30vh;
 }
 
 .gallery img:hover {
