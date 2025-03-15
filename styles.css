@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 h1 {
@@ -11,13 +11,25 @@ h1 {
     font-size: xx-large;
 }
 
+h2 {
+    font-size: large;
+    font-weight: lighter;
+    margin: 0;
+}
+
+p {
+    font-size: small;
+    color: lightgray;
+    margin: 0;
+}
+
 a {
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 30px;
     text-decoration: none;
     color: dimgrey;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 a:hover {
@@ -27,27 +39,56 @@ a:hover {
 .gallery {
     display: flex;
     gap: 10px;
-    row-gap: 10px;
     margin: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
     flex-wrap: wrap;
 }
 
-.gallery img {
-    object-fit: cover;
+.image-container {
+    position: relative;
+    display: inline-block;
 }
 
-.gallery img:hover {
-    filter: brightness(75%);
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* Elemente untereinander anordnen */
+    align-items: flex-start;
+    /* Am linken Rand ausrichten */
+    justify-content: flex-end;
+    /* Am unteren Rand ausrichten */
+    box-sizing: border-box;
+    padding: 10px;
+    /* Abstand vom Rand für bessere Optik */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .image-overlay {
+    opacity: 1;
+    /* Sichtbar beim Hover */
+}
+
+
+.gallery img {
+    display: block;
+    object-fit: cover;
     transition: 0.3s;
 }
 
 .header {
     display: flex;
-    margin: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
     gap: 10px;
 }
 
@@ -57,12 +98,50 @@ a:hover {
     height: 50px;
 }
 
+.footer {
+    height: 50vh;
+    padding-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#loadingScreen {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+}
+
+#loadingScreen img {
+    width: 50px;
+    margin: auto;
+    animation: spin 2s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .warning {
     font-family: monospace;
-    color: red;
+    font-size: small;
+    color: black;
     font-weight: bold;
     position: fixed;
     top: 0;
     right: 0;
-    margin: 10px;
+    margin: 30px;
+    margin-right: 40px;
+    z-index: 99;
 }
