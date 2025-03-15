@@ -1,5 +1,4 @@
 window.onload = function () {
-    // Ladebildschirm ausblenden
     document.getElementById('loadingScreen').style.display = 'none';
     console.log("loadingscreen disabled")
 };
@@ -11,13 +10,12 @@ function calculateImagesPerRow() {
 
     let iprow;
 
-    // Bestimme die Anzahl der Bilder basierend auf dem Seitenverhältnis
-    if (aspectRatio > 1.75) {  // Sehr breite Fenster
-        iprow = 4;  // Mehr Bilder pro Reihe
-    } else if (aspectRatio > 1) {  // Normale Fenster
-        iprow = 3;  // Standardanzahl
-    } else {  // Hohe Fenster (weniger Bildbreite)
-        iprow = 2;  // Weniger Bilder pro Reihe
+    if (aspectRatio > 1.75) {
+        iprow = 4;
+    } else if (aspectRatio > 1) {
+        iprow = 3;
+    } else {
+        iprow = 2;
     }
 
     return iprow;
