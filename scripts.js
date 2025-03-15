@@ -31,14 +31,14 @@ function calculateGallery() {
         let totalWidth = 0;
 
         group.forEach(img => {
-            totalWidth += img.naturalWidth;
+            totalWidth += img.naturalWidth / img.naturalHeight;
             console.log(img.naturalWidth)
         });
 
         console.log(`Total Width: ${totalWidth}`)
 
         group.forEach(img => {
-            const imgWidthPercentage = (img.naturalWidth / totalWidth);
+            const imgWidthPercentage = ((img.naturalWidth / img.naturalHeight) / totalWidth);
             img.style.width = `${imgWidthPercentage * ((gallerywidth - 1 /* -1 weil es sonst buggt*/) - (group.length - 1) * gap)}px`;
             console.log(`Gruppe ${Math.floor(i / iprow) + 1}:`, img.src);
         });
