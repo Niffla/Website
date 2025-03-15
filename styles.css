@@ -12,6 +12,7 @@ h1 {
 }
 
 h2 {
+    color: white;
     font-size: large;
     font-weight: lighter;
     margin: 0;
@@ -51,6 +52,7 @@ a:hover {
 }
 
 .image-overlay {
+    pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -60,16 +62,21 @@ a:hover {
     color: white;
     display: flex;
     flex-direction: column;
+    /* Elemente untereinander anordnen */
     align-items: flex-start;
+    /* Am linken Rand ausrichten */
     justify-content: flex-end;
+    /* Am unteren Rand ausrichten */
     box-sizing: border-box;
     padding: 10px;
+    /* Abstand vom Rand für bessere Optik */
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
 .image-container:hover .image-overlay {
     opacity: 1;
+    /* Sichtbar beim Hover */
 }
 
 
@@ -128,16 +135,32 @@ a:hover {
     }
 }
 
-.warning {
-    font-family: monospace;
-    font-size: small;
-    color: black;
-    font-weight: bold;
+#lightbox {
+    pointer-events: none;
     position: fixed;
     top: 0;
-    right: 0;
-    margin: 30px;
-    margin-right: 40px;
-    z-index: 99;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 200;
+}
+
+#lightboxImage {
+    position: absolute;
+    max-width: 80%;
+    max-height: 80%;
+    transition: 0.3s ease;
+}
+
+#lightbox.visible {
+    pointer-events: all;
+    opacity: 1;
+    visibility: visible;
 }
