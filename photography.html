@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HS Film & Foto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg" href="assets/logo.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+</head>
+
+<body>
+    <div id="loadingScreen">
+        <div id="loadingScreenContent">
+            <img src="assets/blacklogo.svg" alt="">
+            <div id="loadingScreenTitle">
+                <h1>HS Film & Foto</h1>
+                <p>FINN STAPELBERG & VALENTIN HORN</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <a href="index.html">
+            <img src="assets/blacklogo.svg" alt="">
+        </a>
+
+        <a href="index.html">
+            <div>
+                <h1>HS Film & Foto</h1>
+                <p>FINN STAPELBERG & VALENTIN HORN</p>
+            </div>
+        </a>
+        <a href="photography.html">Fotografie</a>
+        <!--<a href="">Videografie</a>-->
+        <a href="about.html">Über uns</a>
+    </div>
+
+    <div id="lightbox">
+        <div id="lightboxContent"></div> <!-- Han nöd gwüsst dass mer in html comments mache chan-->
+    </div>
+
+    <div class="line"></div>
+
+    <div class="subHeader">
+        <h2 class="galleryButton" id="galleryButton0">SQUARE</h2>
+        <h2 class="galleryButton" id="galleryButton1">WIDE</h2>
+        <h2 class="galleryButton" id="galleryButton2">NARROW</h2>
+    </div>
+
+    <div class="gallery" id="gallery0">
+        <div class="image-container">
+            <img src="images/square.png" alt="" draggable="false">
+            <div class="image-overlay">
+                <h2>IMAGE TITLE</h2>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="images/square.png" alt="" draggable="false">
+            <div class="image-overlay">
+                <h2>IMAGE TITLE</h2>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="images/square.png" alt="" draggable="false">
+            <div class="image-overlay">
+                <h2>IMAGE TITLE</h2>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="images/square.png" alt="" draggable="false">
+            <div class="image-overlay">
+                <h2>IMAGE TITLE</h2>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery" id="gallery1">
+        <div class="image-container">
+            <img src="images/wide.png" alt="" draggable="false">
+            <div class="image-overlay">
+                <h2>IMAGE TITLE</h2>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="images/wide.png" alt="" draggable="false">
+            <div class="image-overlay">
+                <h2>IMAGE TITLE</h2>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="images/wide.png" alt="" draggable="false">
+            <div class="image-overlay">
+                <h2>IMAGE TITLE</h2>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="images/wide.png" alt="" draggable="false">
+            <div class="image-overlay">
+                <h2>IMAGE TITLE</h2>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery" id="gallery2">
+        <div class="image-container">
+            <img src="images/narrow.png" alt="" draggable="false">
+            <div class="image-overlay">
+                <h2>IMAGE TITLE</h2>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="images/narrow.png" alt="" draggable="false">
+            <div class="image-overlay">
+                <h2>IMAGE TITLE</h2>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="images/narrow.png" alt="" draggable="false">
+            <div class="image-overlay">
+                <h2>IMAGE TITLE</h2>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="images/narrow.png" alt="" draggable="false">
+            <div class="image-overlay">
+                <h2>IMAGE TITLE</h2>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p id="copyright">© 2025 | Finn Stapelberg | Valentin Horn</p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HS Film & Foto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg" href="assets/logo.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+</head>
+
+<body>
+    <div id="loadingScreen">
+        <div id="loadingScreenContent">
+            <img src="assets/blacklogo.svg" alt="">
+            <div id="loadingScreenTitle">
+                <h1>HS Film & Foto</h1>
+                <p>FINN STAPELBERG & VALENTIN HORN</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <a href="index.html">
+            <img src="assets/blacklogo.svg" alt="">
+        </a>
+
+        <a href="index.html">
+            <div>
+                <h1>HS Film & Foto</h1>
+                <p>FINN STAPELBERG & VALENTIN HORN</p>
+            </div>
+        </a>
+        <a href="photography.html">Fotografie</a>
+        <!--<a href="">Videografie</a>-->
+        <a href="">Über uns</a>
+    </div>
+
+    <div id="lightbox">
+        <div id="lightboxContent"></div> <!-- Han nöd gwüsst dass mer in html comments mache chan-->
+    </div>
+
+    <div class="line"></div>
+
+    <h2 class="galleryButton" id="galleryButton0"></h2>
+
+    <div class="gallery" id="gallery0">
+        <div class="image-container">
+            <img src="images/square.png" alt="" draggable="false">
+            <div class="image-overlay">
+                <h2>IMAGE TITLE</h2>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="images/wide.png" alt="" draggable="false">
+            <div class="image-overlay">
+                <h2>IMAGE TITLE</h2>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text">Hallo, wir sind Valentin und Finn</h2>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsa maxime tempora nam, nostrum
+        modi placeat voluptatibus cumque! Commodi eos eaque consequatur doloribus ex? Commodi dolorem tempore enim,
+        expedita cupiditate voluptatibus dicta maiores aliquid nulla inventore sit? Et distinctio officiis mollitia
+        ullam esse aspernatur architecto eveniet voluptatem, pariatur excepturi repellendus, nostrum fugit sapiente
+        sequi id. Iste aspernatur itaque nam atque, asperiores vel vero perspiciatis placeat enim ex, consequatur aut
+        laboriosam voluptatum! Facere quis vitae in obcaecati ratione placeat dolorem suscipit, doloribus, nisi
+        repudiandae nulla. Accusamus voluptatem aut culpa laborum! Sunt alias, quod atque ipsa voluptate minima possimus
+        ipsum voluptatum ipsam.
+    </p>
+
+    <div class="footer">
+        <p id="copyright">© 2025 | Finn Stapelberg | Valentin Horn</p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
